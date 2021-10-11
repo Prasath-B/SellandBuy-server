@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({limit:'50mb',extended:true}));
 app.use(bodyParser.json({limit:'50mb'}));
 
 
-const dbURL = `mongodb+srv://prasath:${process.env.MONGODB_KEY}@cluster0.r6mvm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const dbURL = `mongodb+srv://prasath:balpraman@cluster0.r6mvm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
  mongoose.connect(dbURL, {
   useNewUrlParser: true,
