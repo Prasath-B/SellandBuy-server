@@ -12,7 +12,7 @@ const dotenv = require('dotenv').config()
 const app = express();
 
 
-app.use(cors());
+
 
 
 require("./config/strategy")(passport);
@@ -51,7 +51,7 @@ passport.deserializeUser(function(user, done) {
 });
 
 
-
+app.use(cors());
 app.use(router)
 
 app.listen(process.env.PORT || '5000',()=>{
